@@ -95,6 +95,20 @@
 
 }
 
+.date{
+    font-weight: 500;
+    color: #344056;
+}
+.date-time{
+    font-weight: 500;
+    color: red;
+}
+
+.gold-pure{
+    font-weight: 500;
+    color: #344056;
+}
+
 .sliver-live{
     .price-gold1{
         color: #EB5B3C; 
@@ -113,6 +127,12 @@
         background-color: whitesmoke;
         
     }
+
+    .date-time{
+        font-weight: 500;
+        color: green;
+    }
+    
 
 }
 
@@ -151,5 +171,47 @@
         height: 30px;
         
        
+    }
+}
+
+
+.mobile-bg{
+    background-image: url(../../assets/Framebackgroundimage.png);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-size: cover;
+    margin-top: 40px;
+    padding: 40px 0;
+}
+
+.main-text-app{
+    text-align: center;
+    .para-app{
+        font-size: 40px;
+        font-weight: 700;
+        margin: 0px;
+        color: white;
+    }
+}
+
+.phone-img{
+    width: 100%;
+    height: 300px;
+}
+.star-img{
+    text-align: center;
+    .star{
+        width: 70px;
+        height: 70px;
+    }
+}
+
+.playstore-img{
+    padding-top: 40px;
+    text-align: center;
+    .playstore{
+        width: 150px;
+        height: 110px;
     }
 }

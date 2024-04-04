@@ -1,0 +1,119 @@
+.bg-footer{
+    margin-top: 40px;
+    
+    padding-bottom: 20px;
+    background-color: #074646;
+    
+
+}
+
+.main-contact{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    .contact{
+        font-size: 30px;
+        font-weight: 500;
+        color: #ffff;
+    }
+}
+
+.box1{
+    background-color: #ffff;
+    border: 1px solid #ffff;
+    border-radius: 5px;
+    height: 217px;
+    padding: 24px;
+   
+}
+
+
+
+.contact-para{
+    
+    text-align: center;
+    color: #E1B737;
+    font-size: 25px;
+    font-weight: 500;
+    margin: 0px;
+}
+
+.icons{
+    width: 30px;
+    height: 30px;
+}
+
+.contact-number{
+    display: flex;
+    align-items: center;
+}
+
+.main-contact-number{
+    display: flex;
+    padding: 5px 20px;
+    justify-content: space-around;
+}
+.number{
+    font-size: 18px;
+    font-weight: 500;
+    color: #44475b;
+    margin: 8px;
+}
+
+
+
+.main-clock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .clock{
+        width: 30px;
+        height: 30px;
+    }
+    .date-time{
+        color: #344056;
+        font-size: 16px;
+        padding-top: 8px;
+        padding-left: 8px;
+        margin: 0px;
+        font-weight: 500;
+    }
+}
+
+.times{
+    text-align: center;
+}
+
+.address{
+    display: flex;
+    justify-content: center;
+    
+    .home{
+        width: 30px;
+        height: 30px;
+    }
+
+    .address-para{
+        color: #E1B737;
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    
+}
+
+.text-address2{
+    font-size: 16px;
+    font-weight: 500;
+    color: #344056;
+   
+
+}
+
+
+
+// 
+.footer{
+    margin-top: 40px;
+    background-color: #074646;
+}
