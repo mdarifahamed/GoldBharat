@@ -1,0 +1,76 @@
+<section class="bg-header">
+    <div class="header">
+        
+        <form [formGroup]="form" >
+        
+        <div class="form-head">
+            <div class="gold-img-head">
+                <img class="gold-img" src="../../assets/goldbharat.png" alt="">
+            </div>
+            <div class="main-para-reg">
+                <p class="para-reg1">Hello! Register to get started</p>
+                <p class="para-business">Business Information</p>
+            </div>
+            <label class="name-text" for="">Business Name <span class="star">*</span></label>
+            <div>
+                <input class="input" type="text" placeholder="Enter your name" formControlName="name" [ngClass]="{ 'is-invalid': submitted && f['name'].errors}">
+                 <div *ngIf="submitted && f['name'].errors " class="invalid-feedback">
+                    <div *ngIf="f['name'].errors['required']">name is required</div>
+                    
+                  </div>
+                  <div *ngIf="submitted && f['name'].errors " class="invalid-feedback">
+                    <div *ngIf="f['name'].errors['pattern']">Number is not allowed</div>
+                    
+                </div>
+            </div>
+            <label class="name-text" for="">Person Full Name  <span class="star">*</span></label>
+            <div>
+                <input class="input" type="text" placeholder="Enter your name" formControlName="name" [ngClass]="{ 'is-invalid': submitted && f['name'].errors}">
+                 <div *ngIf="submitted && f['name'].errors " class="invalid-feedback">
+                    <div *ngIf="f['name'].errors['required']">name is required</div>
+                    
+                  </div>
+                  <div *ngIf="submitted && f['name'].errors " class="invalid-feedback">
+                    <div *ngIf="f['name'].errors['pattern']">Number is not allowed</div>
+                    
+                </div>
+            </div>
+            
+            <label class="name-text"  for="">Email</label>
+            <div>
+              <input class="input" type="text" placeholder="Enter your email" formControlName="email" [ngClass]="{ 'is-invalid': submitted && f['email'].errors }">
+                <div *ngIf="submitted && f['email'].errors" class="invalid-feedback">
+                    <div *ngIf="f['email'].errors['required']">email is required</div>
+                    <div *ngIf="f['email'].errors['email']">email is required</div>
+                </div>
+            </div>
+            <label class="name-text"  for="">Mobile No</label>
+            <div>
+                <input class="input" type="text" placeholder="Enter your number" formControlName="phone" [ngClass]="{ 'is-invalid': submitted && f['phone'].errors }">
+                <div *ngIf="submitted &&  f['phone'].errors"  class="invalid-feedback">
+                
+                    <div *ngIf="f['phone'].errors['required']">Mobile no is required</div>
+                    <div *ngIf="f['phone'].errors['minlength'] ">mobile no must 10 digit</div>
+                    
+                  
+                </div>
+             
+                
+            </div>
+           
+
+           
+
+            <div class="btn-head">
+            
+              <button class="btn" (click)="onclick()">Submit</button>
+
+            </div>
+          </div>
+    </form>
+        
+    </div>
+
+</section>
+
+  

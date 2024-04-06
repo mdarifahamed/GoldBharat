@@ -160,5 +160,13 @@
        
         
     </div>
+
+    <div *ngIf="Data">
+      <p>{{ Data.id }}</p>
+      <p>Date: {{ Data.updated_at }}</p>
+      <p>{{Data.content}}</p>
+       
+    </div>
+      
     
 </div>
