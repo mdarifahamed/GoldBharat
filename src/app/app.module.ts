@@ -9,19 +9,25 @@ import { HomeComponent } from './home/home.component';
 import { RegisterComponent } from './register/register.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import{HttpClientModule} from   '@angular/common/http';
+import { PolicyComponent } from './policy/policy.component';
+import { LocationsComponent } from './locations/locations.component';
+import { ProductsComponent } from './products/products.component';
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
     HomeComponent,
-    RegisterComponent
+    RegisterComponent,
+    PolicyComponent,
+    LocationsComponent,
+    ProductsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

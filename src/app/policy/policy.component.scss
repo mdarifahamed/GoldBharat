@@ -1,0 +1,63 @@
+.policy-header{
+    padding-top: 20px;
+}
+
+.para-gen{
+    font-size: 27px;
+    font-weight: 600;
+    color:#212529;
+}
+
+.para1{
+    font-size: 20px;
+    font-weight:600;
+    color:#212529;
+}
+.para2{
+    font-size: 17px;
+   text-align: justify;
+   color: rgb(130, 128, 128);
+
+}
+
+
+@media screen and (max-width:500px) {
+    .para2{
+        font-size: 14px;
+        text-align: justify;
+        color: rgb(130, 128, 128);
+    }
+
+    .para1{
+        font-size: 15px;
+        font-weight: 700;
+        color: #212529;
+    }
+
+    .para-gen {
+        font-size: 20px;
+        font-weight: 700;
+        color: #212529;
+    }
+}
+
+
+@media screen and (max-width:991px) and (min-width:768px) {
+    .para-gen{
+        font-size: 23px;
+        font-weight: 600;
+        color: #212529;
+    } 
+
+    .para2 {
+        font-size: 15px;
+        text-align: justify;
+        color: rgb(130, 128, 128);
+    }
+
+    .para1{
+        font-size: 16px;
+        font-weight: 700;
+        color: #212529;
+    }
+}

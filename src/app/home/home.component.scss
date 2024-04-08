@@ -152,6 +152,7 @@
 }
 
 .goldbar1{
+    // width: 100%;
     width: 250px;
     height:250px;
 }
@@ -213,5 +214,162 @@
     .playstore{
         width: 150px;
         height: 110px;
+    }
+}
+
+
+@media screen and (max-width:500px) {
+    .main-spot{
+        margin-bottom: 12px;
+    }
+
+    .gold-img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .date{
+        font-size: 14px;
+        font-weight: 700;
+    }
+
+    .date-time{
+        font-size: 14px;
+        font-weight: 700;
+    }
+
+    .grams{
+        font-weight: 600;
+    }
+
+    .main-date2{
+        margin-bottom: 12px;
+        .date{
+            font-size: 13px;
+            font-weight: 700;
+        }
+
+        .gold-pure{
+            font-size: 13px;
+            font-weight: 700;
+        }
+    }
+
+    .goldbar1-img{
+        text-align: center;
+        .goldbar1{
+            width: 250px;
+            height: 250px;
+        }
+    }
+   
+
+
+
+    .main-text-app{
+        .para-app{
+            font-size: 20px;
+        }
+
+    }
+
+    .phone-img-main{
+        text-align: center;
+        padding: 5px ;
+
+        .phone-img{
+            width: 100px;
+            height:100px;
+        }
+    
+    }
+
+    
+    .star-img{
+        .star{
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    .playstore-img{
+        .playstore{
+            width: 80px;
+            height: 46px;
+        }
+    }
+
+    .mobile-bg{
+        margin-top: 20px;
+        padding: 10px 0px;
+    }
+
+   
+
+    
+}
+
+@media screen and (max-width:768px) and (min-width:500px) {
+    .goldbar1-img{
+        text-align: center;
+        .goldbar1{
+            width: 170px;
+            height: 170px;
+        }
+    }
+    
+
+    .header-product{
+        padding-top: 20px;
+    }
+
+    .gold-img{
+        width: 110px;
+        height: 110px;
+    }
+    
+    .mobile-bg{
+        margin-top: 30px;
+        padding-top: 10px 0;
+
+    }
+}
+
+
+@media screen and (max-width:991px) and (min-width:768px) {
+    .goldbar1-img{
+        text-align: center;
+        .goldbar1{
+            width: 170px;
+            // height: 170px;
+        }
+    }
+    
+
+    .header-product{
+        padding-top: 20px;
+    }
+
+    .gold-img{
+        width: 110px;
+        height: 110px;
+    }
+    
+    .mobile-bg{
+        margin-top: 30px;
+        padding-top: 10px 0;
+
+    }
+
+}
+
+
+@media screen and (width:1024px)  {
+    .goldbar1-img{
+        text-align: center;
+        .goldbar1{
+            width:100%;
+            
+        }
     }
 }
