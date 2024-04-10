@@ -21,6 +21,113 @@
 
 </div>
 
+<div *ngIf="product">
+    <P>{{product.title}}</P>
+    <P>{{product.images}}</P>
+    <p>{{product.brand}}</p>
+   
+</div>
+
+<!-- iphone-x.component.html -->
+
+<table class="table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Title</th>
+        <th>Description</th>
+        <th>Price</th>
+        <th>Discount Percentage</th>
+        <th>Rating</th>
+        <th>Stock</th>
+        <th>Brand</th>
+        <th>Category</th>
+        <th>Thumbnail</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let product of product">
+        <td>{{ product.id }}</td>
+        <td>{{ product.title }}</td>
+        <td>{{ product.description }}</td>
+        <td>{{ product.price }}</td>
+        <td>{{ product.discountPercentage }}</td>
+        <td>{{ product.rating }}</td>
+        <td>{{ product.stock }}</td>
+        <td>{{ product.brand }}</td>
+        <td>{{ product.category }}</td>
+        <td><img [src]="product.thumbnail" alt="Thumbnail" height="50px"></td>
+      </tr>
+      
+    </tbody>
+  </table>
 
 
+  <table class="table2">
+    <thead class="head1">
+        <tr class="tr1">
+        <th class="id">ID</th>
+        <th class="id">Title</th>
+        <th class="id">price</th>
+        <th class="id">quantity</th>
+        <th class="id">total</th>
+        <th class="id">discountPercentage</th>
+        <th class="id">discountedPrice</th>
+        <th class="id">Thumbnail</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let cart of carts[0].products">
+            <td class="carts">{{ cart.id }}</td>
+            <td class="carts">{{ cart.title }}</td >
+            <td  class="carts">{{ cart.price }}</td >
+            <td class="carts">{{ cart.quantity }}</td >
+            <td class="carts">{{ cart.total }}</td >
+            <td class="carts">{{ cart.discountPercentage }}</td >
+            <td class="carts">{{ cart.discountedPrice}}</td>
+            <td class="carts"><img [src]="cart.thumbnail" alt="Thumbnail" height="50px"></td>
+        </tr>
+        <tr *ngFor="let cart of carts[3].products">
+            <td class="carts">{{ cart.id }}</td>
+            <td class="carts">{{ cart.title }}</td >
+            <td  class="carts">{{ cart.price }}</td >
+            <td class="carts">{{ cart.quantity }}</td >
+            <td class="carts">{{ cart.total }}</td >
+            <td class="carts">{{ cart.discountPercentage }}</td >
+            <td class="carts">{{ cart.discountedPrice}}</td>
+            <td class="carts"><img [src]="cart.thumbnail" alt="Thumbnail" height="50px"></td>
+        </tr>
+
+
+        
+
+    </tbody>
+
+</table>
+  
+<table>
+    <thead>
+      <tr>
+        <th>Order ID</th>
+        <th>User ID</th>
+        <th>Product Name</th>
+        <th>Quantity Purchased</th>
+        <th>Total Price</th>
+        <th>Order Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr > 
+        <td>{{ list2.id }}</td>
+        <td>{{ list2.user_id }}</td>
+        <td>{{ list2.product_name }}</td>
+        <td>{{ list2.qty_purchased }}</td>
+        <td>{{ list2.total_price }}</td>
+        <td>{{ list2.order_status }}</td>
+        
+        
+      </tr>
+    </tbody>
+  </table>
   

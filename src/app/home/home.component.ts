@@ -20,7 +20,7 @@ export class HomeComponent {
   }
   ngOnInit(): void {
     this.getdata();
-    this.buyOrder();
+    this.buyOrder1();
     this.randomdata();
     
   }
@@ -37,7 +37,7 @@ export class HomeComponent {
   }
 
 
-  buyOrder(){
+  buyOrder1(){
     const headers = new HttpHeaders({
       Authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjAsInJlZ2lzdGVyX3Bob25lX251bWJlciI6IjYzNjYxNzU0MzQiLCJuYW1lIjoiTW9uaWthIiwiaWF0IjoxNzExNzA0MDgwLCJleHAiOjE3MTk0ODAwODB9.HT_aW3_4ZXtS5CxHutQaK0r7jYghoKg2ol8prlEU0ok',
     });
