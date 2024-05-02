@@ -1,0 +1,117 @@
+<section class="my-product">
+  <div class="container">
+    <div class="row">
+      <table>
+        <thead>
+          <tr>
+            
+            <th class="para">ID</th>
+            <th class="para">Name</th>
+            <th class="para">Username</th>
+            <th class="para">Email</th>
+            <th class="para">Address</th>
+            <th class="para">Phone</th>
+            <th class="para">Website</th>
+            <th class="para">Company</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let user of datausers" class="abc">
+            
+            <td class="id-user">{{ user.id }}</td>
+            <td class="id-name">{{ user.name }}</td>
+            <td class="id-username">{{ user.username }}</td>
+            <td  class="id-useremail">{{ user.email }}</td>
+            <td class="id-address">
+              {{ user.address.street }}, {{ user.address.suite }},
+              {{ user.address.city }}, {{ user.address.zipcode }},
+            </td>
+      
+            <td class="id-phone">{{ user.phone }}</td>
+            <td class="id-website">{{ user.website }}</td>
+            <td class="id-company">{{ user.company.name }}</td>
+          </tr>
+        </tbody>
+      </table>
+  
+    </div>
+  </div>
+</section>
+
+
+ <!-- <div class="table2">
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Title</th>
+        <th>Price</th>
+        <th>Description</th>
+        <th>Category</th>
+        <th>Created At</th>
+        <th>Updated At</th>
+        <th>Images</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let product of product">
+        <td class="product-id">{{ product.id }}</td>
+        <td class="product-title">{{ product.title }}</td>
+        <td class="product-price">{{ product.price }}</td>
+        <td class="product.des">{{ product.description }}</td>
+        <td class="product-catego">{{ product.category.name }}</td>
+        <td class="product-create">{{ product.createdAt }}</td>
+        <td class="product-upd">{{ product.updatedAt }}</td>
+        <td class="product-img">
+          <div *ngIf="product.images">
+            <img [src]="product.images" alt="Product Image" style="max-width: 100px; max-height: 100px; margin-right: 5px;">
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>  -->
+
+
+
+
+<div class="table2">
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Title</th>
+        <th>Price</th>
+        <th>Description</th>
+        <th>Category</th>
+        <th>Images</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let product of productSlice">
+        <td class="product-id">{{ product.id }}</td>
+        <td class="product-title">{{ product.title }}</td>
+        <td class="product-price">{{ product.price }}</td>
+        <td class="product-des">{{ product.description }}</td>
+        <td class="product-catego">{{ product.category.name }}</td>
+        <td class="product-img">
+          <div *ngIf="product.images">
+            <img [src]="product.images" alt="Product Image" style="max-width: 100px; max-height: 100px; margin-right: 5px;">
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="pagination">
+    <button class="btn1" (click)="prevPage()" [disabled]="currentPage === 1">Previous</button>
+    <span class="page">{{ currentPage }} / {{ totalPages }}</span>
+    <button class="btn2" (click)="nextPage()" [disabled]="currentPage === totalPages">Next</button>
+  </div>
+</div>
+
+
+
+
+
+

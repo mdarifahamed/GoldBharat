@@ -10,3 +10,92 @@
         
     </div>
 </div>
+
+
+<!-- <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Username</th>
+        <th>Email</th>
+        <th>Address</th>
+        <th>Phone</th>
+        <th>Website</th>
+        <th>Company</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of datausers">
+        <td>{{ user.id }}</td>
+        <td>{{ user.name }}</td>
+        <td>{{ user.username }}</td>
+        <td>{{ user.email }}</td>
+        <td>{{ user.address.street }}, {{ user.address.suite }}, {{ user.address.city }}, {{ user.address.zipcode }}, </td>
+
+        <td>{{ user.phone }}</td>
+        <td>{{ user.website }}</td>
+        <td>{{ user.company.name }}</td>
+      </tr>
+    </tbody>
+  </table> -->
+
+  
+  
+  <!-- user-form.component.html -->
+<!-- <div class="mt-5">
+  <form (ngSubmit)="submitForm()">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" [(ngModel)]="user.name" required>
+  
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" [(ngModel)]="user.email" required>
+  
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" name="phone" [(ngModel)]="user.phone" required>
+  
+    <button type="submit">Submit</button>
+  </form>
+</div> -->
+
+
+<!-- <div *ngIf="usersdata">
+  <p class="mt-3 ">{{ usersdata.name.title }} {{ usersdata.name.first }} {{ usersdata.name.last }}</p>
+  <p>{{usersdata.location.city}}</p>
+  <p>{{usersdata.location.state}}</p>
+  <p>{{usersdata.location.country}}</p>
+  
+</div> -->
+
+
+
+<!-- <table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Title</th>
+      <th>Price</th>
+      <th>Description</th>
+      <th>Category</th>
+      <th>Created At</th>
+      <th>Updated At</th>
+      <th>Images</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let product of product">
+      <td>{{ product.id }}</td>
+      <td>{{ product.title }}</td>
+      <td>{{ product.price }}</td>
+      <td>{{ product.description }}</td>
+      <td>{{ product.category.name }}</td>
+      <td>{{ product.createdAt }}</td>
+      <td>{{ product.updatedAt }}</td>
+      <td>
+        <div *ngIf="product.images">
+          <img [src]="product.images" alt="Product Image" style="max-width: 100px; max-height: 100px; margin-right: 5px;">
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table> -->

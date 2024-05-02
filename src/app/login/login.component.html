@@ -1,0 +1,74 @@
+<!-- <section class="mt-5">
+    <form (ngSubmit)="verifyOTP()" #otpForm="ngForm">
+        <div class="form-group">
+          <label for="otpInput1">Enter OTP:</label>
+          <input type="text" id="otpInput1" name="otpInput1" [(ngModel)]="otpInputs[0]" maxlength="1" (keyup)="focusNext($event, 0)">
+          <input type="text" id="otpInput2" name="otpInput2" [(ngModel)]="otpInputs[1]" maxlength="1" (keyup)="focusNext($event, 1)">
+          <input type="text" id="otpInput3" name="otpInput3" [(ngModel)]="otpInputs[2]" maxlength="1" (keyup)="focusNext($event, 2)">
+          <input type="text" id="otpInput4" name="otpInput4" [(ngModel)]="otpInputs[3]" maxlength="1" (keyup)="focusNext($event, 3)">
+        </div>
+        <div class="form-group">
+          <button type="button" class="btn btn-secondary" (click)="goBack()">Backspace</button>
+          <button type="button" class="btn btn-primary" (click)="goPrevious()">Previous</button>
+          <button type="submit" [disabled]="otpForm.invalid" class="btn btn-primary">Verify OTP</button>
+        </div>
+    </form>
+      
+</section> -->
+
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP verification UI using bootstrap</title>
+
+    
+  
+</head>
+
+<body>
+    <div class="container p-5">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-5 mt-5">
+                <div class="bg-white p-5 rounded-3 shadow-sm border">
+                    <div>
+                        <p class="text-center text-success" style="font-size: 5.5rem;"><i class="fa-solid fa-envelope-circle-check"></i></p>
+                        <p class="text-center text-center h5 ">Please check your email</p>
+                       
+                        <div class="row pt-4 pb-2">
+                            <div class="col-3">
+                                <input class="otp-letter-input" type="text" maxlength="1">
+                            </div>
+                            <div class="col-3">
+                                <input class="otp-letter-input" type="text" maxlength="1">
+                            </div>
+                            <div class="col-3">
+                                <input class="otp-letter-input" type="text" maxlength="1">
+                            </div>
+                            <div class="col-3">
+                                <input class="otp-letter-input" type="text" maxlength="1">
+                            </div>
+                        </div>
+                        <p class="text-muted text-center">Didn't get the code? <a href="#" class="text-success">Click to resend.</a></p>
+
+                        <div class="row pt-5">
+                            <div class="col-6">
+                                <button class="btn btn-outline-secondary w-100">Cancel</button>
+                            </div>
+                            <div class="col-6">
+                                <button class="btn btn-success w-100">Verify</button>
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -105,8 +105,54 @@
     </tbody>
 
 </table>
+
+<div *ngIf="newpro">
+  <h4>{{ newpro.title }}</h4>
+  <p>Category: {{ newpro.category }}</p>
+  <p>Price: ${{ newpro.price }}</p>
+  <p>Description: {{ newpro.description }}</p>
+  <img [src]="newpro.image" alt="Product Image" height="100px">
   
-<table>
+</div>
+
+
+<h2>Create New Product</h2>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <form (ngSubmit)="createProduct()" #productForm="ngForm">
+        <div>
+        <label for="productName">Name:</label>
+        <input type="text" id="productName" name="productName" [(ngModel)]="postData.name" required>
+       </div>
+       <div>
+        <label for="productPrice">Price:</label>
+        <input type="number" id="productPrice" name="productPrice" [(ngModel)]="postData.price" required>
+
+       </div>
+
+       <div>
+        <label for="productCategory">Category:</label>
+        <input type="text" id="productCategory" name="productCategory" [(ngModel)]="postData.category" required>
+
+       </div>
+
+       <div>
+        <label for="productDescription">Description:</label>
+        <textarea id="productDescription" name="productDescription" [(ngModel)]="postData.description" required></textarea>
+
+       </div>
+       
+        <button type="submit" [disabled]="!productForm.valid">Create Product</button>
+      </form>
+
+    </div>
+  </div>
+</div>
+
+
+  
+<!-- <table>
     <thead>
       <tr>
         <th>Order ID</th>
@@ -129,5 +175,5 @@
         
       </tr>
     </tbody>
-  </table>
+  </table> -->
   

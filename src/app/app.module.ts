@@ -7,11 +7,16 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { RegisterComponent } from './register/register.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import{HttpClientModule} from   '@angular/common/http';
 import { PolicyComponent } from './policy/policy.component';
 import { LocationsComponent } from './locations/locations.component';
 import { ProductsComponent } from './products/products.component';
+import { LoginComponent } from './login/login.component';
+import { MyproductsComponent } from './myproducts/myproducts.component';
+import { ApiService } from './api.service';
+import { PagenationComponent } from './pagenation/pagenation.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,13 +26,20 @@ import { ProductsComponent } from './products/products.component';
     RegisterComponent,
     PolicyComponent,
     LocationsComponent,
-    ProductsComponent
+    ProductsComponent,
+    LoginComponent,
+    MyproductsComponent,
+    PagenationComponent,
+   
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
     HttpClientModule,
+    FormsModule,
+    
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

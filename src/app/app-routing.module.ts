@@ -5,6 +5,10 @@ import { RegisterComponent } from './register/register.component';
 import { PolicyComponent } from './policy/policy.component';
 import { LocationsComponent } from './locations/locations.component';
 import { ProductsComponent } from './products/products.component';
+import { LoginComponent } from './login/login.component';
+import { MyproductsComponent } from './myproducts/myproducts.component';
+import { PagenationComponent } from './pagenation/pagenation.component';
+
 
 
 
@@ -15,6 +19,9 @@ const routes: Routes = [
   {path:"policy", component:PolicyComponent},
   {path:"locations", component:LocationsComponent},
   {path:"products", component:ProductsComponent},
+  {path:"login", component:LoginComponent},
+  {path:"myproducts", component:MyproductsComponent},
+  {path:"page", component:PagenationComponent}
   
 ];
 

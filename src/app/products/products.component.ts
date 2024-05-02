@@ -7,6 +7,21 @@ import { Component } from '@angular/core';
   styleUrls: ['./products.component.scss'],
 })
 export class ProductsComponent {
+createProduct() {
+  this.http.post('https://fakestoreapi.com/products', this.postData, this.httpOptions)
+    .subscribe((result: any) => {
+      console.log('New product created:', result);
+      // Optionally, you can reset the postData object after successful creation
+      this.postData = {
+        name: '',
+        price: 0,
+        category: '',
+        description: ''
+      };
+    }, error => {
+      console.error('Error creating product:', error);
+    });
+}
   usersdata: any;
   dummay:any;
   randomdata:any;
@@ -17,7 +32,13 @@ export class ProductsComponent {
   products: any;
   card:any;
   carts: any;
-
+  newpro: any;
+  postData:any={
+    name: '',
+    price: '',
+    category: '',
+    description: ''
+  }
   
   constructor(private http: HttpClient) {}
 
@@ -27,7 +48,10 @@ export class ProductsComponent {
     this.getrandomdata();
     this.buyOrder();
     this.buyproduct();
-    this.buycard()
+    this.buycard();
+    this.newprodut();
+    this.postprodut();
+
     
   }
 
@@ -82,5 +106,23 @@ export class ProductsComponent {
     })
   }
 
+  newprodut(){
+    this.http.get('https://fakestoreapi.com/products/1').subscribe((result: any) =>{
+      this.newpro = result;
+    })
+  }
+
+   httpOptions = {
+    headers: new HttpHeaders({
+      'Content-Type': 'application/json'
+    })
+  };
+  postprodut(){
+    this.http.post('https://fakestoreapi.com/products/',this.postData,this.httpOptions).subscribe((result: any) =>{
+      this.newpro = result;
+    })
+  }
+
+  
 
 }
