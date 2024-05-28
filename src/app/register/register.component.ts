@@ -6,6 +6,7 @@ import { AbstractControl, FormBuilder, FormControl, FormGroup, Validators } from
   templateUrl: './register.component.html',
   styleUrls: ['./register.component.scss'],
   
+  
 })
 export class RegisterComponent implements OnInit {
   form!:FormGroup
@@ -20,6 +21,7 @@ export class RegisterComponent implements OnInit {
       
       confirmpassword:new FormControl('', Validators.required),
     },
+
     {
       validators: this.passwordMatchValidator
     });

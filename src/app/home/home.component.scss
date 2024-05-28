@@ -1,19 +1,20 @@
 .home-header{
-    padding-top:20px;
-    
+    padding-top:90px;
+    background-color: #010A43;
 }
 
 .para{
     font-size: 18px;
     font-weight: 600;
-    color: #44475B;
+    color: #ffff;
 }
 
 .main-spot{
     border-radius: 5px;
     padding-top: 5px;
     text-align: center;
-    border: 1px solid #E9E9EB;
+    border: 1px solid #464E8A;
+    background-color: #192259;
 }
 
 .spot-gold{
@@ -22,7 +23,8 @@
    
 }
 .spot-gold{
-    color:  #44475B;
+    color:#E7E4E4;
+    // font-weight: 600;
 }
 .spot-gold-price{
     color: #00B386;
@@ -42,7 +44,7 @@
 .para1{
     font-size: 18px;
     font-weight: 600;
-    color: #44475B;
+    color: white;
     padding-top: 20px;
 }
 .main-date{
@@ -65,12 +67,19 @@
 
 .live-gold{
     text-align: center;
-    background-color: #FEFAEF;
-    
+    padding: 10px;
+    display: flex;
+    background-color: #192259;
+    border: 1px solid #464E8A;
+    border-radius: 10px;
+}
+
+.main-para-gold{
+    padding: 40px 40px 30px 30px ;
 }
 .grams{
     font-size: 14px;
-    color: #344056;
+    color: #E7E4E4;
 }
 
 .price-gold1{
@@ -101,7 +110,7 @@
 }
 .date-time{
     font-weight: 500;
-    color: red;
+    color: #FAAD39;
 }
 
 .gold-pure{
@@ -110,6 +119,10 @@
 }
 
 .sliver-live{
+    background-color: #192259;
+    border: 1px solid #464E8A;
+    border-radius: 10px;
+    
     .price-gold1{
         color: #EB5B3C; 
     }
@@ -124,7 +137,7 @@
 
     .live-gold{
         text-align: center;
-        background-color: whitesmoke;
+        
         
     }
 
@@ -184,6 +197,7 @@
     background-size: cover;
     margin-top: 40px;
     padding: 40px 0;
+    background-color: #010A43;
 }
 
 .main-text-app{

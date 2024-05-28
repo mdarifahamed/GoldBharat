@@ -8,6 +8,8 @@ import { ProductsComponent } from './products/products.component';
 import { LoginComponent } from './login/login.component';
 import { MyproductsComponent } from './myproducts/myproducts.component';
 import { PagenationComponent } from './pagenation/pagenation.component';
+import { BookComponent } from './book/book.component';
+import { AboutComponent } from './about/about.component';
 
 
 
@@ -21,7 +23,9 @@ const routes: Routes = [
   {path:"products", component:ProductsComponent},
   {path:"login", component:LoginComponent},
   {path:"myproducts", component:MyproductsComponent},
-  {path:"page", component:PagenationComponent}
+  {path:"page", component:PagenationComponent},
+  {path:"book", component:BookComponent},
+  {path:"about", component:AboutComponent},
   
 ];
 

@@ -16,6 +16,8 @@ import { LoginComponent } from './login/login.component';
 import { MyproductsComponent } from './myproducts/myproducts.component';
 import { ApiService } from './api.service';
 import { PagenationComponent } from './pagenation/pagenation.component';
+import { BookComponent } from './book/book.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +32,8 @@ import { PagenationComponent } from './pagenation/pagenation.component';
     LoginComponent,
     MyproductsComponent,
     PagenationComponent,
+    BookComponent,
+    AboutComponent,
    
   ],
   imports: [

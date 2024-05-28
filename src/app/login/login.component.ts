@@ -9,64 +9,43 @@ import { FormsModule, NgForm } from '@angular/forms';
 export class LoginComponent {
   
 
-  otpInputs: string[] = ['', '', '', ''];
+  otpInputs: string[] = ['', '', '', '',];
 
-
-  constructor(private renderer: Renderer2) { }
-
-  verifyOTP() {
-    const otpValue = this.otpInputs.join('');
-    console.log('Verifying OTP:', otpValue);
-    // You can add OTP verification logic here
-  }
-
-  focusNext(event: any, index: number) {
-    if (event.target.value.length === 1 && index < this.otpInputs.length - 1) {
-      const nextInput = event.target.nextElementSibling;
-      if (nextInput) {
-        nextInput.focus();
-      }
+  onInput(event: Event, index: number): void {
+    const input = event.target as HTMLInputElement;
+    const value = input.value;
+    if (value.length ===1 && index < this.otpInputs.length - 1) {
+      this.moveToNextInput(index);
     }
   }
 
-  goBack() {
-    for (let i = this.otpInputs.length - 1; i >= 0; i--) {
-      if (this.otpInputs[i]) {
-        this.otpInputs[i] = '';
-        break;
-      }
+  onKeyDown(event: KeyboardEvent, index: number): void {
+    if (event.key === 'Backspace' && index > 0) {
+      this.moveToPreviousInput(index);
     }
   }
 
-  goPrevious() {
-    for (let i = 0; i < this.otpInputs.length; i++) {
-      if (!this.otpInputs[i]) {
-        const prevInput = i > 0 ? i - 1 : 0;
-        document.getElementById(`otpInput${prevInput + 1}`)?.focus();
-        break;
-      }
+  onPaste(event: ClipboardEvent): void {
+    event.preventDefault();
+    const clipboardData = event.clipboardData?.getData('text') || '';
+    if (/^\d+$/.test(clipboardData) && clipboardData.length === this.otpInputs.length) {
+      this.otpInputs = clipboardData.split('');
     }
   }
 
-
-
-  submitOtp(form: NgForm) {
-    if (form.valid) {
-      const otpValue = form.value.digit1 + form.value.digit2 + form.value.digit3 + form.value.digit4;
-      console.log('Entered OTP:', otpValue);
-      // You can now send the OTP for validation or further processing
-    } else {
-      console.log('Invalid OTP');
+  private moveToNextInput(index: number): void {
+    const nextInput = document.querySelectorAll('.otp-letter-input')[index + 1] as HTMLInputElement;
+    if (nextInput) {
+      nextInput.focus();
     }
   }
 
-  focusPrevInput(event: KeyboardEvent, prevInput: any) {
-    if (event.key === 'Backspace' && prevInput) {
+  private moveToPreviousInput(index: number): void {
+    const prevInput = document.querySelectorAll('.otp-letter-input')[index - 1] as HTMLInputElement;
+    if (prevInput) {
       prevInput.focus();
     }
   }
 
-
- 
 
 }

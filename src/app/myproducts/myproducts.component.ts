@@ -15,7 +15,7 @@ export class MyproductsComponent {
   currentPage: number = 1;
   pageSize: number = 5; // Number of items per page
   totalPages: number = 0;
-data: any;
+  data: any;
   constructor(private http: HttpClient, private api: ApiService) {}
 
   ngOnInit(): void {
@@ -40,7 +40,7 @@ data: any;
   // products() {
   //   this.http
   //     .get('https://api.escuelajs.co/api/v1/products')
-  //     .subscribe((pro: any) => {
+  //     .subscribe((pro: any) =>{
   //       this.product = pro;      });
   // }
 
@@ -51,10 +51,14 @@ data: any;
     });
   }
 
+ 
+
   get productSlice() {
     const start = (this.currentPage - 1) * this.pageSize;
     return this.product.slice(start, start + this.pageSize);
   }
+
+
 
   nextPage() {
     if (this.currentPage < this.totalPages) {
@@ -67,10 +71,6 @@ data: any;
       this.currentPage--;
     }
   }
-
-  
- 
-  
 
   
 }

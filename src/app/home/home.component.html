@@ -1,5 +1,8 @@
 <div class="home-header">
     <div class="container">
+
+
+
         <p class="para">Real-Time Gold and Silver Live Prices</p>
 
         <div class="row">
@@ -30,8 +33,10 @@
         </div>
 
         <p class="para1">Commodities on Gold Bharat</p>
+        <p class="date-time">Date & Time : {{ today | date:'d  MMMM  y &  h:mm:ss a' }}</p>
 
-        <div class="row">
+
+        <!-- <div class="row">
             <div class="col-md-6">
                 <div class="gold-live">
                     <div class="main-date">
@@ -90,10 +95,44 @@
                    
                 </div>
             </div>
+        </div> -->
+        <div class="row">
+            
+            <div class="col-md-6">
+                <div class="gold-live">
+                    <div class="live-gold">
+                        <div>
+                            <img class="gold-img" src="../../assets/gold1.png" alt="">
+
+                        </div>
+
+                        <div class="main-para-gold">
+                            <p class="grams">Gold Live Price Per Gram</p>
+                            <p class="price-gold1">₹ 6383.76</p>
+
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="sliver-live">
+                    
+
+                    <div class="live-gold">
+                        <img class="gold-img" src="../../assets/sliver1.png" alt="">
+                        <div class="main-para-gold">
+                            <p class="grams">Silver Live Price Per 1Kg</p>
+                            <p class="price-gold1">₹ 71293.04</p>
+
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
         </div>
-
-       
-
     </div>
 
     <div class="header-product">

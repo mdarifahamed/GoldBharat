@@ -15,4 +15,6 @@ export class ApiService {
   products(){
     return this.http.get('https://api.escuelajs.co/api/v1/products');
   }
+
+  
 }

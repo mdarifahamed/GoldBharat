@@ -2,6 +2,10 @@
   background-color: #010A43;
   height: 80px;
   padding: 10px;
+  position: fixed;
+  width: 100%;
+  border-bottom: 1px solid #D9D9D9;
+  
   
 }
 
@@ -64,11 +68,26 @@
 .navbar-nav .nav-link:hover {
   color:#e1b737;
 }
+.active-link {
+  font-weight: bold;
+  color:#e1b737 !important; /* Change this to your desired active link color */
+}
+
+
+.btn-head{
+  display: flex;
+}
+
 @media screen and (max-width: 500px) {
+  .navbar-light .navbar-toggler {
+    color: #fffffff0;
+    background-color: white;
+    border-color: rgba(0, 0, 0, .1);
+  }
 
  
   .navbar-nav .nav-link {
-    color: #000;
+    color:white;
     
     
   }
@@ -77,6 +96,11 @@
 }
 
 @media screen and (max-width: 768px) and (min-width:600px)  {
+  .navbar-light .navbar-toggler {
+    color: #fffffff0;
+    background-color: white;
+    border-color: rgba(0, 0, 0, .1);
+  }
   .navbar-nav .nav-link {
     color: #000;
     font-size: 15px;
@@ -92,6 +116,13 @@
 
 
 @media screen and (max-width:1024px) and (min-width:991px) {
+  .navbar-light .navbar-toggler {
+    color: #fffffff0;
+    background-color: white;
+    border-color: rgba(0, 0, 0, .1);
+  }
+
+  
   .navbar-nav .nav-link {
     // color: #fff;
     // font-size: 11px;

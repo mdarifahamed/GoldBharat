@@ -30,7 +30,7 @@
 </head>
 
 <body>
-    <div class="container p-5">
+    <!-- <div class="container p-5">
         <div class="row">
             <div class="col-md-3"></div>
             <div class="col-md-5 mt-5">
@@ -69,6 +69,43 @@
                 </div>
             </div>
         </div>
+    </div> -->
+
+    <div class="container p-5">
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-5 mt-5">
+            <div class="bg-white p-5 rounded-3 shadow-sm border">
+                <div>
+                    <p class="text-center text-success" style="font-size: 5.5rem;">
+                        <i class="fa-solid fa-envelope-circle-check"></i>
+                    </p>
+                    <p class="text-center h5">Please check your email</p>
+                    <div class="row pt-4 pb-2">
+                        <div class="col-3" *ngFor="let otp of otpInputs; let i = index">
+                            <input
+                                class="otp-letter-input form-control text-center"
+                                type="text"
+                                maxlength="1"
+                                [(ngModel)]="otpInputs[i]"
+                                (input)="onInput($event, i)">
+                        </div>
+                    </div>
+                    <p class="text-muted text-center">Didn't get the code? <a href="#" class="text-success">Click to resend.</a></p>
+                    <div class="row pt-5">
+                        <div class="col-6">
+                            <button class="btn btn-outline-secondary w-100">Cancel</button>
+                        </div>
+                        <div class="col-6">
+                            <button class="btn btn-success w-100">Verify</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+</div>
+
+    
 </body>
 </html>

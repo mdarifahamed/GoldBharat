@@ -1,13 +1,32 @@
 .bg-footer{
-    margin-top: 40px;
+    background-color: #192259;
+    // margin-top: 40px;
     padding-bottom: 20px;
+   
+    
+}
+
+.bg-footer1{
+   
+}
+
+.footer {
+    background-color: #010A43;
+    color: white; /* Optional: Ensure text color is readable on dark background */
+    padding-top: 40px;
+}
+
+.footer1{
     background-color: #192259;
 }
+
+
 
 .main-contact{
     padding-top: 20px;
     padding-bottom: 20px;
     text-align: center;
+   
     .contact{
         font-size: 30px;
         font-weight: 500;
@@ -21,6 +40,7 @@
     border-radius: 5px;
     height: 217px;
     padding: 24px;
+    margin-bottom: 15px;
    
 }
 
@@ -110,10 +130,7 @@
 
 
 // 
-.footer{
-    margin-top: 40px;
-    background-color: #192259;
-}
+
 
 .para-link{
     padding-top: 30px;

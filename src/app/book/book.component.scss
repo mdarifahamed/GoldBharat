@@ -1,0 +1,55 @@
+.section-book{
+  background-color: #010A43;
+  padding-top: 90px;
+}
+
+.book-box1{
+    color: white;
+    width: 25%;
+    margin: auto;
+    padding-bottom: 10px;
+}
+
+.box{
+    background-color: #192259;
+    border: 1px solid #464E8A;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+.box1{
+    background-color: #192259;
+    border: 1px solid #464E8A;
+    border-radius: 10px;
+    padding: 10px;
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+}
+
+.book-para2{
+    color: #FAAD39;
+}
+
+.Book-text{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+@media screen and (max-width:500px){
+    .book-box1{
+        margin: 20px;
+        // width:120px;
+    }
+
+    .box{
+        width: 285px;
+        text-align: justify;
+    }
+    
+    .box1{
+        width: 285px;
+        text-align: justify;
+    }
+
+}
