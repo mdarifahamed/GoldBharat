@@ -66,10 +66,4 @@ constructor(private http:HttpClient){
     })
   }
   
-
-
-
-
-
-
 }

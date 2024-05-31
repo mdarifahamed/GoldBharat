@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NavigationEnd, Router,Event } from '@angular/router';
 
 
 @Component({
@@ -16,6 +17,16 @@ export class HeaderComponent {
         navbarToggler.dispatchEvent(new Event('click'));
       }
     }
+
+    
+  }
+
+  constructor(private router: Router) {
+    this.router.events.subscribe((event: Event) => {
+      if (event instanceof NavigationEnd) {
+        window.scrollTo(0, 0);
+      }
+    });
   }
 
   
