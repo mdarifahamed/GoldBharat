@@ -118,3 +118,81 @@
     color: #000;
   }
 }
+
+
+@media screen and (max-width:500px) {
+  .main-location {
+    background-color: #ffff;
+    height: 400px;
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+  .address{
+    
+    .logo-address{
+      width: 180px;
+    }
+    
+  }
+  
+  
+}
+
+
+@media screen and (max-width:768px) and (min-width:500px) {
+  .map{
+    height: 260px;
+  }
+
+  .main-location {
+    background-color: #ffff;
+    height: 260px;
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+  .phones {
+    
+    .mobile-text {
+      padding-left: 10px;
+    }
+  
+    .touch {
+      font-size:15px;
+      color: #dbb94b;
+      font-weight: 600;
+      margin: 0px;
+    }
+  
+    .Whatsapp {
+      color: #000;
+      font-size: 15px;
+     
+    }
+  }
+  
+  .email{
+    .touch {
+      margin: 0px;
+      font-size: 15px;
+      color: #dbb94b;
+      font-weight: 600;
+    }
+    
+  }
+
+  .address{
+    
+    .logo-address{
+      width: 150px;
+    }
+    .touch {
+      font-size: 15px;
+      color: #dbb94b;
+      font-weight: 600;
+      margin: 0px;
+    }
+  }
+ 
+}

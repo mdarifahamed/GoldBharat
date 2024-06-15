@@ -3,8 +3,7 @@
     <div class="row">
       <table>
         <thead>
-          <tr>
-            
+          <tr class="para-main">
             <th class="para">ID</th>
             <th class="para">Name</th>
             <th class="para">Username</th>
@@ -15,25 +14,71 @@
             <th class="para">Company</th>
           </tr>
         </thead>
-        <tbody>
-          <tr *ngFor="let user of datausers" class="abc">
-            
-            <td class="id-user">{{ user.id }}</td>
+        
+        <tbody *ngFor="let user of datausers" class="abc1">
+           <td class="id-user">{{ user.id }}</td>
             <td class="id-name">{{ user.name }}</td>
             <td class="id-username">{{ user.username }}</td>
-            <td  class="id-useremail">{{ user.email }}</td>
-            <td class="id-address">
-              {{ user.address.street }}, {{ user.address.suite }},
-              {{ user.address.city }}, {{ user.address.zipcode }},
-            </td>
-      
+            <td class="id-useremail">{{ user.email }}</td>
+            <td class="id-address">{{ user.address.street }}, {{ user.address.suite }}, {{ user.address.city }}, {{ user.address.zipcode }}</td>
             <td class="id-phone">{{ user.phone }}</td>
             <td class="id-website">{{ user.website }}</td>
-            <td class="id-company">{{ user.company.name }}</td>
+            <td class="id-company">{{ user.company.name }}</td> 
+        </tbody>
+        
+        <tbody *ngFor="let user of datausers" class="abc">
+          <tr>
+            <td>Id</td>
+            <td>:</td>
+            <td>{{ user.id }}</td>
+            
           </tr>
+          <tr>
+            <td>Name</td>
+            <td>:</td>
+            <td>{{ user.name }}</td>
+          </tr>
+          <tr>
+            <td>Username</td>
+            <td>:</td>
+            <td>{{ user.username }}</td>
+          </tr>
+          <tr>
+            <td>Email</td>
+            <td>:</td>
+            <td>{{ user.email }}</td>
+          </tr>
+          <tr>
+            <td>Address</td>
+            <td>:</td>
+            <td>{{ user.address.street }}, {{ user.address.suite }}, {{ user.address.city }}, {{ user.address.zipcode }}</td>
+          </tr>
+          <tr>
+            <td>Phone</td>
+            <td>:</td>
+            <td>{{ user.phone }}</td>
+          </tr>
+          <tr>
+            <td>Website</td>
+            <td>:</td>
+            <td>{{ user.website }}</td>
+          </tr>
+          <tr>
+            <td>Company</td>
+            <td>:</td>
+            <td>{{ user.company.name }}</td>
+          </tr>
+          <div class="btn-main">
+            <button class="btn">Confirm Payment</button>
+
+          </div>
+          
+          
+          
+          
         </tbody>
       </table>
-  
+
     </div>
   </div>
 </section>

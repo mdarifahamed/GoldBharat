@@ -23,16 +23,20 @@
 
 
 @media screen and (max-width:500px) {
+    .policy-header{
+        padding-top: 40px;
+        background-color: #010A43;
+    }
     .para2{
         font-size: 14px;
         text-align: justify;
-        color: rgb(130, 128, 128);
+        color: #E7E4E4;
     }
 
     .para1{
         font-size: 15px;
-        font-weight: 700;
-        color: #212529;
+        font-weight:700;
+        color:white;
     }
 
     .para-gen {
@@ -44,6 +48,10 @@
 
 
 @media screen and (max-width:991px) and (min-width:768px) {
+    .policy-header{
+        padding-top: 40px;
+        background-color: #010A43;
+    }
     .para-gen{
         font-size: 23px;
         font-weight: 600;
@@ -53,12 +61,12 @@
     .para2 {
         font-size: 15px;
         text-align: justify;
-        color: rgb(130, 128, 128);
+        color: #E7E4E4;
     }
 
     .para1{
         font-size: 16px;
-        font-weight: 700;
-        color: #212529;
+        font-weight:700;
+        color:white;
     }
 }

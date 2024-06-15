@@ -28,6 +28,7 @@ export class MyproductsComponent {
   getusers() {
     this.api.users().subscribe((data: any) => {
       this.datausers = data;
+      
     });
   }
 

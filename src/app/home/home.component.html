@@ -1,138 +1,83 @@
 <div class="home-header">
     <div class="container">
+        <div class="main-header-gold">
+            <p class="para">Real-Time Gold and Silver Live Prices</p>
 
-
-
-        <p class="para">Real-Time Gold and Silver Live Prices</p>
-
-        <div class="row">
-            <div class="col-md-4">
-                <div class="main-spot">
-                    <p class="spot-gold">Spot Gold</p>
-                    <P class="spot-gold-price">$2023.8</P>
-    
-                </div>
-
-            </div>
-            <div class="col-md-4">
-                <div class="main-spot">
-                    <p class="spot-gold">Spot Sliver</p>
-                    <P class="spot-silver-price">$22.361</P>
-    
-                </div>
-
-            </div>
-            <div class="col-md-4">
-                <div class="main-spot">
-                    <p class="spot-gold">Spot Rupee</p>
-                    <P class="spot-Rupee-price">$2023.8</P>
-    
-                </div>
-
-            </div>
-        </div>
-
-        <p class="para1">Commodities on Gold Bharat</p>
-        <p class="date-time">Date & Time : {{ today | date:'d  MMMM  y &  h:mm:ss a' }}</p>
-
-
-        <!-- <div class="row">
-            <div class="col-md-6">
-                <div class="gold-live">
-                    <div class="main-date">
-                        <p class="date">Date & Time</p>
-                        <p class="date-time">{{ today | date:'MMMM d, y,  h:mm:ss a' }}</p>
-
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="main-spot">
+                        <p class="spot-gold">Spot Gold</p>
+                        <P class="spot-gold-price">$2023.8</P>
+        
                     </div>
-
-                    <div class="live-gold">
-                        <img class="gold-img" src="../../assets/gold1.png" alt="">
-                        <p class="grams">Gold Live Price Per Gram</p>
-                        <p class="price-gold1">₹ 6383.76</p>
+    
+                </div>
+                <div class="col-md-4">
+                    <div class="main-spot">
+                        <p class="spot-gold">Spot Sliver</p>
+                        <P class="spot-silver-price">$22.361</P>
+        
                     </div>
-
-                    <div class="main-date2">
-                        <div class="d-flex">
-                            <img class="verify" src="../../assets/securitytick.png" alt="">
-                            <p class="date">100% Hallmarked</p>
+    
+                </div>
+                <div class="col-md-4">
+                    <div class="main-spot">
+                        <p class="spot-gold">Spot Rupee</p>
+                        <P class="spot-Rupee-price">$2023.8</P>
+        
+                    </div>
+    
+                </div>
+            </div>
+    
+            <p class="para1">Commodities on Gold Bharat</p>
+            <p class="date-time">Date & Time : {{ today | date:'d  MMMM  y &  h:mm:ss a' }}</p>
+    
+    
+          
+            <div class="row">
+                
+                <div class="col-md-6">
+                    <div class="gold-live">
+                        <div class="live-gold">
+                            <div>
+                                <img class="gold-img" src="../../assets/gold1.png" alt="">
+    
+                            </div>
+    
+                            <div class="main-para-gold">
+                                <p class="grams">Gold Live Price Per Gram</p>
+                                <p class="price-gold1">₹ 6383.76</p>
+    
+                            </div>
+                            
                             
                         </div>
-                       
-                        <p class="gold-pure">24k 999 Pure Gold</p>
-
                     </div>
-
-                    
-                   
                 </div>
-            </div>
-            <div class="col-md-6">
-                <div class="sliver-live">
-                    <div class="main-date">
-                        <p class="date">Date & Time</p>
-                        <p class="date-time">{{ today | date:'MMMM d, y,  h:mm:ss a' }}</p>
-
-                    </div>
-
-                    <div class="live-gold">
-                        <img class="gold-img" src="../../assets/sliver1.png" alt="">
-                        <p class="grams">Silver Live Price Per 1Kg</p>
-                        <p class="price-gold1">₹ 71293.04</p>
-                    </div>
-
-                    <div class="main-date2">
-                        <div class="d-flex">
-                            <img class="verify" src="../../assets/securitytick.png" alt="">
-                            <p class="date">100% Hallmarked</p>
-                            
-                        </div>
-                       
-                        <p class="gold-pure">99.9% Pure Silver</p>
-
-                    </div>
-
-                    
-                   
-                </div>
-            </div>
-        </div> -->
-        <div class="row">
-            
-            <div class="col-md-6">
-                <div class="gold-live">
-                    <div class="live-gold">
-                        <div>
-                            <img class="gold-img" src="../../assets/gold1.png" alt="">
-
-                        </div>
-
-                        <div class="main-para-gold">
-                            <p class="grams">Gold Live Price Per Gram</p>
-                            <p class="price-gold1">₹ 6383.76</p>
-
-                        </div>
+    
+                <div class="col-md-6">
+                    <div class="sliver-live">
                         
-                        
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6">
-                <div class="sliver-live">
-                    
-
-                    <div class="live-gold">
-                        <img class="gold-img" src="../../assets/sliver1.png" alt="">
-                        <div class="main-para-gold">
-                            <p class="grams">Silver Live Price Per 1Kg</p>
-                            <p class="price-gold1">₹ 71293.04</p>
-
+    
+                        <div class="live-gold">
+                            <img class="gold-img" src="../../assets/sliver1.png" alt="">
+                            <div class="main-para-gold">
+                                <p class="grams">Silver Live Price Per 1Kg</p>
+                                <p class="price-gold1">₹ 71293.04</p>
+    
+                            </div>
+                           
                         </div>
-                       
                     </div>
                 </div>
             </div>
+
         </div>
+
+
+
+      
     </div>
 
     <div class="header-product">

@@ -1,189 +1,230 @@
-.my-product{
-    background-color: rgb(182, 189, 189);
-    padding-top: 20px;
+.my-product {
+  background-color: #010a43;
+  padding-top: 90px;
 }
 
-.para{
-    color: #000;
-    font-weight: 700;
-    font-size: 16px;
-    padding-left: 5px;
-    justify-content: space-between;
-}
-
-
-
-.id-user{
-    color: #000;
-    font-weight: 600;
-    padding-right: 10px;
-    font-size: 16px;
-}
-.id-name{
-    font-size: 15px;
-    padding: 10px;
-}
-
-.id-username{
-    font-size: 16px;
-    padding: 10px;
-}
-
-.id-useremail{
-    font-size: 16px;
-    padding: 10px;
-}
-
-.id-address{
-    
-    font-size: 16px;
-    padding: 10px;
-}
-
-.id-phone{
-    font-size: 16px;
-    padding: 10px;
-}
-
-.id-website{
-    font-size: 16px;
-    padding: 10px;
-}
-
-.id-company{
-    font-size: 16px;
-    padding: 10px;
-}
-
-/* Define styles for screens up to 500px wide */
-/* Define styles for screens up to 500px wide */
-
+.para {
   
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  padding-left: 5px;
+  justify-content: space-between;
+  // border: 1px solid black;
+}
+
+.para-main .abc {
+  border: 1px solid black;
+}
+
+.id-user {
+  
+  color: white;
+  font-weight: 600;
+  padding-right: 10px;
+  font-size: 16px;
+}
+.id-name {
+  font-size: 15px;
+  padding: 10px;
+}
+
+.id-username {
+  font-size: 16px;
+  padding: 10px;
+}
+
+.id-useremail {
+  font-size: 16px;
+  padding: 10px;
+}
+
+.id-address {
+  font-size: 16px;
+  padding: 10px;
+}
+
+.id-phone {
+  font-size: 16px;
+  padding: 10px;
+}
+
+.id-website {
+  font-size: 16px;
+  padding: 10px;
+}
+
+.id-company {
+  font-size: 16px;
+  padding: 10px;
+}
+
+.abc {
+  color: #fff;
+  display: none;
+}
+
+.abc1{
+  color: #fff;
+}
+
+
+/* Define styles for screens up to 500px wide */
+/* Define styles for screens up to 500px wide */
+
 @media screen and (max-width: 500px) {
-    .my-product table {
-      width: 100%;
-      border-collapse: collapse;
+  .abc1 {
+    display: none;
+  }
+
+  .my-product table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .my-product th,
+  .my-product td {
+    padding: 6px;
+    text-align: left;
+    color: #fff;
+  }
+
+  .my-product .abc {
+    display: block;
+    border: 2px solid white;
+    margin-bottom: 10px;
+  }
+
+  .my-product .id-user,
+  .my-product .id-name,
+  .my-product .id-username,
+  .my-product .id-useremail,
+  .my-product .id-address,
+  .my-product .id-phone,
+  .my-product .id-website,
+  .my-product .id-company {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+  }
+
+  .my-product .para {
+    display: none;
+  }
+
+  .para2 {
+    font-weight: 700;
+    padding-right: 10px;
+    color: white;
+    min-width: 70px; /* Adjust as needed */
+  }
+
+  .colon {
+    padding: 0 5px; /* Adjust padding as needed */
+  }
+
+  .btn {
+    padding: 10px;
+    width: 90%;
+    color: white;
+    background-color: green;
+    margin: 10px;
+   
+    
+
+  }
+
+  .btn-main{
+    // text-align: center;
+    // padding:10px 0px 10px 0px;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 768px) {
+  .my-product table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .my-product th,
+  .my-product td {
+    padding: 8px;
+    text-align: left;
+  }
+
+  .my-product .abc {
+    display: block;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+  }
+
+  .my-product .id-user,
+  .my-product .id-name,
+  .my-product .id-username,
+  .my-product .id-useremail,
+  .my-product .id-address,
+  .my-product .id-phone,
+  .my-product .id-website,
+  .my-product .id-company {
+    display: block;
+    padding: 5px;
+  }
+
+  .my-product .para {
+    display: none;
+  }
+}
+
+.table2 {
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  th,
+  td {
+    border: 1px solid #ddd;
+    padding: 5px;
+    text-align: left;
+  }
+
+  /* Media query for screens with a maximum width of 500px */
+  @media only screen and (max-width: 500px) {
+    /* Hide the ID and Category columns on smaller screens */
+    // .product-id, .product-catego {
+    //   display: none;
+    // }
+
+    /* Adjust the font size for the table cells */
+    th,
+    td {
+      font-size: 3px;
     }
-  
-    .my-product th, .my-product td {
-      padding: 8px;
-      text-align: left;
-    }
-  
-    .my-product .abc {
-      display: block;
-      border-bottom: 1px solid #ddd;
-      margin-bottom: 10px;
-    }
-  
-    .my-product .id-user,
-    .my-product .id-name,
-    .my-product .id-username,
-    .my-product .id-useremail,
-    .my-product .id-address,
-    .my-product .id-phone,
-    .my-product .id-website,
-    .my-product .id-company {
-      display: block;
-      padding: 5px;
-    }
-  
-    .my-product .para {
-      display: none;
+
+    /* Adjust the image size for smaller screens */
+    .product-img img {
+      max-width: 80px;
+      max-height: 80px;
     }
   }
-@media screen and (min-width:500px) and (max-width: 768px) {
-    .my-product table {
-      width: 100%;
-      border-collapse: collapse;
-    }
-  
-    .my-product th, .my-product td {
-      padding: 8px;
-      text-align: left;
-    }
-  
-    .my-product .abc {
-      display: block;
-      border-bottom: 1px solid #ddd;
-      margin-bottom: 10px;
-    }
-  
-    .my-product .id-user,
-    .my-product .id-name,
-    .my-product .id-username,
-    .my-product .id-useremail,
-    .my-product .id-address,
-    .my-product .id-phone,
-    .my-product .id-website,
-    .my-product .id-company {
-      display: block;
-      padding: 5px;
-    }
-  
-    .my-product .para {
-      display: none;
-    }
 }
 
-
- 
-
-.table2{
-
-    table {
-            width: 100%;
-            border-collapse: collapse;
-          }
-        
-          th, td {
-            border: 1px solid #ddd;
-            padding: 5px;
-            text-align: left;
-          }
-
-        
-        
-          /* Media query for screens with a maximum width of 500px */
-          @media only screen and (max-width: 500px) {
-            /* Hide the ID and Category columns on smaller screens */
-            // .product-id, .product-catego {
-            //   display: none;
-            // }
-        
-          
-        
-            /* Adjust the font size for the table cells */
-            th, td {
-              font-size: 3px;
-            }
-        
-            /* Adjust the image size for smaller screens */
-            .product-img img {
-              max-width: 80px;
-              max-height: 80px;
-            }
-          }
-
+.table2 {
+  margin-top: 20px;
+  background-color: rgb(160, 178, 178);
 }
 
-
-.table2{
-    margin-top: 20px;
-    background-color: rgb(160, 178, 178);
-}
-
-.pagination{
+.pagination {
   margin: 20px;
 }
 
-.page{
+.page {
   margin: 10px;
   font-size: 16px;
   font-weight: 600;
 }
 
-.btn1{
+.btn1 {
   width: 100px;
   height: 44px;
   cursor: pointer;
@@ -194,10 +235,10 @@
   text-align: center;
   font-size: 16px;
   font-weight: 600;
-  margin-bottom:10px;
+  margin-bottom: 10px;
 }
-.btn2{
-   width: 100px;
+.btn2 {
+  width: 100px;
   height: 44px;
   cursor: pointer;
   text-align: center;
@@ -208,5 +249,4 @@
   font-size: 16px;
   font-weight: 600;
   margin-bottom: 10px;
-  
 }

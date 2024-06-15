@@ -65,5 +65,5 @@ constructor(private http:HttpClient){
       this.product = pro;
     })
   }
-  
+
 }
